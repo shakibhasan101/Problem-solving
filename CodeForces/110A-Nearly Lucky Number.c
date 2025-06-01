@@ -1,21 +1,44 @@
 #include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
 int main()
 {
-    int n,count=0;
-    scanf("%d",&n);
-    while (n!=0)
-    {
-        int rem = n%10;
-        n=n/10;
+    unsigned long long n;
+    int count=0;
+    int track=0;
+    int final_track=0;
+    scanf("%llu",&n);
+    int len= log10(n)+1;
 
-        if(rem!=4 && rem!=7)
-        {
-            count++;
-        }
+        for (int i =len-1;i>=0;i--)
+    {
+      int   digit = n/(unsigned long long)pow(10,i)%10;
+
+      count++;
+        if((digit ==4 ||digit ==7) &&count<=4)
+               {
+                   track++;
+                   if(track==4 || track==7)
+                       {
+                           final_track=-1;
+                       }
+
+
+               }
+
+        else if((digit ==4 || digit ==7)&&count<=7)
+               {
+                   track++;
+                   if(track==4 || track==7)
+                       {
+                           final_track=-1;
+
+                       }
+               }
     }
-    if(count==0)
-        printf("YES");
-    else
-        printf("NO");
-    return 0;
+
+   if(final_track==-1) printf("YES");
+   else printf("NO");
+
+   return 0;
 }
