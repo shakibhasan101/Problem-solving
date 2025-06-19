@@ -6,7 +6,6 @@ void swap(char arr[], int a, int b)
     arr[a]=arr[b];
     arr[b]=temp;
 }
-
 void bubble_sort(char a[])
 {
     int i, j;
@@ -25,37 +24,6 @@ void bubble_sort(char a[])
 
     }
 }
-
-//void bubble_sort(char a[])
-//{
-//    int i, j;
-//
-//    int ub =strlen(a);
-//
-//    for (j=0; j<ub-1; j++)
-//    {
-//        for (i=0; i<ub-j-1; i++)
-//        {
-//            if(a[i]>a[i+1])
-//            {
-//                swap(a, i, i+1);
-//            }
-//        }
-//
-//    }
-//}
-
-
-//void display(char a[])
-//{
-//    for (int i=0; a[i]!='\0'; i++)
-//    {
-//        printf("%c",a[i]);
-//    }
-//}
-
-
-
 int main()
 {
     char data[100];
