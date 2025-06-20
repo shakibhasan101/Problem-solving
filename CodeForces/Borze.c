@@ -4,7 +4,7 @@ int main()
     char str[200];
     scanf("%s",str);
 
-    for (int i=0; i<strlen(str); i++)
+    for (int i=0; i<strlen(str); i++)// .--.-.-.--   -0
     {
         if (str[i]=='.')
             printf("0");
