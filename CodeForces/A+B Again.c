@@ -12,7 +12,7 @@ int main()
         int digit2= test_case%10;
 
         int sum = digit1+digit2;
-        printf("%d",sum);
+        printf("%d\n",sum);
     }
     return 0;
 }
