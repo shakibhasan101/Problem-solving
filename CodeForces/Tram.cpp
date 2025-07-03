@@ -14,9 +14,6 @@ int main()
 
     if(max_capacity<total)
         max_capacity=total;
-    cout<<"total:"<<total<<"\n";
-         cout<<"Max:"<<max_capacity<<"\n";
-
  }
 
  cout<<max_capacity;
