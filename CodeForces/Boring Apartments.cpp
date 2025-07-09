@@ -14,13 +14,12 @@ int main()
 
         for (int j=1;j<=digit;j++) // 0-1
         {
-            int temp=j;
 
             for (int i=0; i<4;i++)
             {
-                int temp2  = (temp -1)*j;
+
                 Count ++;
-                temp = j*pow(10,i)+ (temp/j);
+                temp = j*pow(10,i)+ ;
 
                 if(temp==test) break;
 
