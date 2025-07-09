@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-    int n, crime=0,untreated,recruit=0;//untreated
+    int n, crime=0,untreated=0,recruit=0;
     cin>>n;
     int arr[n];
     for (int i=0;i<n;i++)
@@ -11,13 +11,11 @@ int main()
 
     for (int i=0;i<n;i++)
     {
-        //
+
         if (arr[i]==-1)
         {
             if(recruit<=0) untreated ++;
             else  recruit-=1;
-
-
 
         }
 
