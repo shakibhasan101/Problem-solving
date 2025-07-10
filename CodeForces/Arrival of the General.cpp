@@ -34,9 +34,6 @@
 
      }
 
-     cout <<"idxmax=" <<idxmax<<endl;
-     cout <<"idxmin="<<idxmin<<endl;
-
      if(idxmax<idxmin)
         cout << idxmax+(n-1-idxmin)<<endl;
      else
