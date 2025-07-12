@@ -1,27 +1,15 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
-int main()
-{
-    string letter;
-    cin >> letter;
-    char a[1000];
-    int j=0;
 
-    for (int i =0;i<letter.size()-1;i++)
-    {
+int main() {
+    string s;
+    getline(cin, s);
 
-        a[j] = letter[i];
-        j++;
-
-
+    set<char> st;
+    for (char c : s) {
+        if (c >= 'a' && c <= 'z')
+            st.insert(c);
     }
-
-    for(int i =0;i<100;i++)
-    {
-        cout<<a[i];
-    }
-    cout << NULL;
-
-
+    cout << st.size() << "\n";
     return 0;
 }
