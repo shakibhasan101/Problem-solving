@@ -2,8 +2,6 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-// Code Written By: ShakibHasan101
-
 int main()
 {
     string s1,s2;
