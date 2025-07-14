@@ -11,6 +11,6 @@ int main()
     else
         left_shocks = b-a;
 
-    cout<<min_day<<" "<<left_shocks/2;
+    cout<<min_day<<" "<<left_shocks/2<<endl;
     return 0;
 }
