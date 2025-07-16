@@ -11,8 +11,8 @@ int main()
         int a= s[0]+s[1]+s[2];
         int b =s[3]+s[4]+s[5];
 
-        if (a==b) cout << "YES";
-        else cout<< "NO";
+        if (a==b) cout << "YES"<<endl;
+        else cout<< "NO"<<endl;
     }
     return 0;
 }
