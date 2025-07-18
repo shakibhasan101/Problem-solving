@@ -1,7 +1,5 @@
 #include<bits/stdc++.h>
 using namespace std;
-#define ll long long
-
 int main()
 {
     int t;
@@ -17,7 +15,7 @@ int main()
             if(i%3!=0 && i%10!=3)
             j++;
         }
-        cout<<"Result="<<i<<endl;
+        cout<<i<<endl;
     }
     return 0;
 }
