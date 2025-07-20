@@ -10,7 +10,7 @@ int main()
          int a, b;
     cin>>a>>b;
     int result = b-a;
-    cout<<result;
+    cout<<result<<endl;
 
 
     }
